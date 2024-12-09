@@ -1,103 +1,133 @@
-/* Global styles */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #4A6348;
-    color: #FFFFFF;
-    line-height: 1.6;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  /* Header */
-  .main-header {
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  
-  .main-header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .main-header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
-  
-  /* Navigation Bar */
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-    font-size: 1.2rem;
-  }
-  
-  .nav-bar span {
-    text-transform: uppercase;
-    color: #A8D5BA;
-    cursor: pointer;
-  }
-  
-  .nav-bar span:hover {
-    color: #FFFFFF;
-  }
-  
-  /* Experience Section */
-  .experience h2, .education h2 {
-    font-size: 2rem;
-    text-transform: lowercase;
-    color: #A8D5BA;
-  }
-  
-  .job h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .job p {
-    font-size: 1rem;
-    margin: 5px 0 10px;
-  }
-  
-  .job ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .job ul li {
-    margin-bottom: 5px;
-  }
-  
-  .skills {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .skills span {
-    background: #FFFFFF;
-    color: #4A6348;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    font-weight: bold;
-  }
-  
-  /* Education Section */
-  .education {
-    margin-top: 40px;
-  }
-  
-  .education p {
-    font-size: 1.2rem;
-    margin: 5px 0;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #4A6348;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  width: 75%;
+  height: 100vh;
+  padding: 30px;
+  background-color: #4A6348;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  color: #A8D5BA;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  color: #FFFFFF;
+}
+
+.menu-line {
+  height: 2px;
+  width: 20px;
+  background-color: #A8D5BA;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.menu-item.active .menu-line {
+  width: 40px;
+  background-color: #FFFFFF;
+}
+
+.content {
+  width: 75%;
+  padding: 60px;
+  overflow-y: auto;
+}
+
+.content-section {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content-section img {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  color: #A8D5BA;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #eeeeee;
+}
+
+.content-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.content-section ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.skills {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.skills span {
+  background: #FFFFFF;
+  color: #4A6348;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+}

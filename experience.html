@@ -2,35 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experience - Navya Singh</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="main-header">
-    <h1>Experience</h1>
-  </header>
-  <nav class="nav-bar">
-    <a href="index.html">Home</a>
-    <a href="education.html">Education</a>
-  </nav>
-  <main>
-    <section class="experience">
-      <h2>Software Engineer Intern</h2>
-      <p><strong>Company:</strong> TechSmith</p>
+  <section id="experience" class="content-section">
+    <img src="images/coding.png" alt="Coding">
+    <h2>&lt; experience /&gt;</h2>
+    <div class="job">
+      <h3>SOFTWARE ENGINEERING INTERN</h3>
+      <p>TechSmith</p>
       <ul>
-        <li>Developed AI-powered translation tools</li>
-        <li>Optimized application speeds</li>
-        <li>Implemented multilingual captioning features</li>
+        <li>Led a full-stack multilingual captioning project, reducing localization time by over 200% with batch translation and SRT (plain-text file for subtitles) export, enabling captioning in multiple languages within seconds. Addressed a critical need for 5+ international clients and earned a performance bonus for outstanding contributions.</li>
+        <li>Accelerated translation speeds by 85% by parallelizing OpenAI API calls and fully resolving a critical translation bug through dynamic input segmentation, reducing incomplete translation errors by 100%.</li>
+        <li>Developed and maintained NLP features, including context analysis and language recognition using TypeScript and React in an Electron application. Leveraged Azure DevOps to set up automated pipelines for continuous integration and delivery, following Agile methodologies and test-driven development to ensure high-quality, rapid releases.</li>
       </ul>
-      <h2>Undergraduate Researcher</h2>
-      <p>Conducted research on machine learning models for digital transcription.</p>
-      <h2>Teaching Assistant</h2>
-      <p>Assisted students in Computer Science courses, helping with assignments and labs.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Navya Singh. All Rights Reserved.</p>
-  </footer>
+      <div class="skills">
+        <span>TypeScript</span>
+        <span>Natural Language Processing</span>
+        <span>Fullstack Development</span>
+      </div>
+    </div>
+    <div class="job">
+      <h3>UNDERGRADUATE RESEARCHER</h3>
+      <p>Michigan State University</p>
+      <ul>
+        <li>Building a machine learning model with Convolutional Neural Networks using TensorFlow Keras (Python) and a
+          novel feature imitating network approach to transcribe heterogeneous data on paper spreadsheets into digital form.</li>
+        <li>Built a data set of 10,000+ images, achieving a 95% accuracy rate by employing optimization techniques such as data
+          validation, column estimation, and image segmentation.</li>
+      </ul>
+      <div class="skills">
+        <span>Python</span>
+        <span>Tensorflow Keras</span>
+        <span>Deep Learning</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
